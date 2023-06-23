@@ -14,7 +14,7 @@ const HeaderComponent = () => {
     }
     return(
         <nav className="navbar bg-primary text-center" data-bs-theme="dark">
-            <a className="navbar-brand" href="#" onClick={mudarNome}>
+            <a className="navbar-brand m-2" href="#" onClick={mudarNome}>
                 Bem-vindo(a), {name}
             </a>
         </nav>
