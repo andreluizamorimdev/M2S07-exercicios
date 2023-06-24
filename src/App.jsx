@@ -1,11 +1,16 @@
 import './App.css'
-import HeaderComponent from './Header/HeaderComponent'
+import FormComponent from './components/FormComponent/FormComponent.jsx'
+import HeaderComponent from './components/Header/HeaderComponent.jsx'
+import UsersCard from './components/UsersCard/UsersCard'
+import { FormProvider } from './contexts/FormContext/FormContext'
 
 function App() {
   return (
-    <>
-      <HeaderComponent />
-    </>
+    <FormProvider>
+        <HeaderComponent />
+        <FormComponent />
+        <UsersCard />
+    </FormProvider>
   )
 }
 
